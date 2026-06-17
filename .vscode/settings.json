@@ -1,0 +1,9 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\Thallesfb\\Desktop\\FodaseEstatais2\\.venv\\Scripts\\python.exe",
+    "python.languageServer": "Pylance",
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.showToolbar": "always",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#b5890040"
+    }
+}
