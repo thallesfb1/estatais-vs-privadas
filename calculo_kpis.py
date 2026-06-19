@@ -120,15 +120,20 @@ def calcular_kpis_financeiro(dre, bpa, bpp, ano):
     desp_int     = dre_fin[dre_fin['codigo_conta'] == '3.02'][['empresa', 'valor']].rename(columns={'valor': 'desp_intermediacao'})
     ativo_total  = bpa_fin[bpa_fin['codigo_conta'] == '1'][['empresa', 'valor']].rename(columns={'valor': 'ativo_total'})
 
+    # Mapeamento de contas de PDD por banco
+    # Cada banco usa uma conta diferente para provisão de perdas
     contas_pdd = {
-        'BCO BRASIL S.A.':              ['3.02.02', '3.02.03'],
-        'BCO BRADESCO S.A.':            ['3.04.06.01'],
-        'ITAU UNIBANCO HOLDING S.A.':   ['3.04.06.01'],
-        'BCO SANTANDER (BRASIL) S.A.':  ['3.04.06.01', '3.04.06.03'],
-        'BCO BTG PACTUAL S.A.':         ['3.02.02'],
-        'BCO ABC BRASIL S.A.':          ['3.04.06.01'],
-        'BCO PAN S.A.':                 ['3.02.02'],
+        'BCO BRASIL S.A.':                        ['3.02.02', '3.02.03'],
+        'BRB BANCO DE BRASILIA S.A.':             ['3.02.02', '3.02.03'],  # <- novo
+        'BANESTES S.A. - BCO EST ESPIRITO SANTO': ['3.02.02', '3.02.03'],  # <- novo
+        'BCO BRADESCO S.A.':                      ['3.04.06.01'],
+        'ITAU UNIBANCO HOLDING S.A.':             ['3.04.06.01'],
+        'BCO SANTANDER (BRASIL) S.A.':            ['3.04.06.01', '3.04.06.03'],
+        'BCO BTG PACTUAL S.A.':                   ['3.02.02'],
+        'BCO ABC BRASIL S.A.':                    ['3.04.06.01'],
+        'BCO PAN S.A.':                           ['3.02.02'],
     }
+
     linhas_pdd = []
     for empresa, contas in contas_pdd.items():
         pdd_total = dre_fin[

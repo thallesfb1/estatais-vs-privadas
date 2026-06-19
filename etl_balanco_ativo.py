@@ -30,8 +30,16 @@ def processar_balanco(ano):
         'ST_CONTA_FIXA':  'conta_fixa',
     })
     nomes_padronizados = {
-    'EQUATORIAL S.A.': 'EQUATORIAL ENERGIA S.A.',
-    'AXIA ENERGIA S.A.': 'CENTRAIS ELET BRAS S.A. - ELETROBRAS'
+    # Equatorial mudou de nome em 2020
+    'EQUATORIAL S.A.':       'EQUATORIAL ENERGIA S.A.',
+    # Eletrobras foi renomeada para Axia após privatização em 2022
+    'AXIA ENERGIA S.A.':          'CENTRAIS ELET BRAS S.A. - ELETROBRAS',
+    # Enauta tinha encoding quebrado nos arquivos CVM
+    'ENAUTA PARTICIPAÃÃES S.A.': 'ENAUTA PARTICIPAÇÕES S.A.',
+    # 3R Petroleum tinha encoding quebrado
+    '3R PETROLEUM ÃLEO E GÃS S.A.': '3R PETROLEUM ÓLEO E GÁS S.A.',
+    # PetroRecôncavo tinha encoding quebrado
+    'PETRORECÃNCAVO S.A.':        'PETRORECÔNCAVO S.A.',
     }
     df['empresa'] = df['empresa'].replace(nomes_padronizados)
     

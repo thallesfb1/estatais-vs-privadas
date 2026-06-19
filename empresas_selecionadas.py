@@ -3,8 +3,10 @@
 # ============================================================
 
 empresas_selecionadas = {
-    # FINANCEIRO
+    # FINANCEIRO — 3 estatais, 6 privados
     'BCO BRASIL S.A.':                                ('Financeiro', 'Estatal'),
+    'BRB BANCO DE BRASILIA S.A.':                     ('Financeiro', 'Estatal'),   # <- novo
+    'BANESTES S.A. - BCO EST ESPIRITO SANTO':         ('Financeiro', 'Estatal'),   # <- novo
     'ITAU UNIBANCO HOLDING S.A.':                     ('Financeiro', 'Privado'),
     'BCO BRADESCO S.A.':                              ('Financeiro', 'Privado'),
     'BCO SANTANDER (BRASIL) S.A.':                    ('Financeiro', 'Privado'),
@@ -12,7 +14,7 @@ empresas_selecionadas = {
     'BCO ABC BRASIL S.A.':                            ('Financeiro', 'Privado'),
     'BCO PAN S.A.':                                   ('Financeiro', 'Privado'),
 
-    # ENERGIA
+    # ENERGIA — 3 estatais, 6 privados
     'CIA ENERGETICA DE MINAS GERAIS - CEMIG':         ('Energia', 'Estatal'),
     'CIA PARANAENSE DE ENERGIA - COPEL':              ('Energia', 'Estatal'),
     'CENTRAIS ELET BRAS S.A. - ELETROBRAS':           ('Energia', 'Estatal'),
@@ -23,9 +25,13 @@ empresas_selecionadas = {
     'ALUPAR INVESTIMENTO S/A':                        ('Energia', 'Privado'),
     'NEOENERGIA S.A.':                                ('Energia', 'Privado'),
 
-    # PETRÓLEO
+    # PETRÓLEO — 1 estatal, 5 privados
     'PETROLEO BRASILEIRO S.A. PETROBRAS':             ('Petroleo', 'Estatal'),
     'PRIO S.A.':                                      ('Petroleo', 'Privado'),
+    'ENAUTA PARTICIPAÇÕES S.A.':                      ('Petroleo', 'Privado'),
+    '3R PETROLEUM ÓLEO E GÁS S.A.':                  ('Petroleo', 'Privado'),
+    'BRAVA ENERGIA S.A.':                             ('Petroleo', 'Privado'),
+    'PETRORECÔNCAVO S.A.':                            ('Petroleo', 'Privado'),
 }
 
 # ============================================================
@@ -33,11 +39,14 @@ empresas_selecionadas = {
 # ============================================================
 
 transicoes = {
+    # Eletrobras foi privatizada em junho de 2022
+    # e renomeada para Axia Energia
     'CENTRAIS ELET BRAS S.A. - ELETROBRAS': {
         'ate_ano':     2021,
         'tipo_antes':  'Estatal',
         'tipo_depois': 'Privado',
     },
+    # Copel foi privatizada em 2023
     'CIA PARANAENSE DE ENERGIA - COPEL': {
         'ate_ano':     2022,
         'tipo_antes':  'Estatal',
@@ -46,16 +55,26 @@ transicoes = {
 }
 
 # ============================================================
-# EVENTOS EXÓGENOS
+# EVENTOS EXÓGENOS — fatores externos que distorcem os KPIs
 # ============================================================
 
 eventos_exogenos = {
+    # Lei 12.783/2013 forçou renovação de concessões
+    # com tarifas reduzidas, causando prejuízo na Eletrobras
     ('CENTRAIS ELET BRAS S.A. - ELETROBRAS', 2014): 'Lei 12.783/2013 - Renovação tarifária',
     ('CENTRAIS ELET BRAS S.A. - ELETROBRAS', 2015): 'Lei 12.783/2013 - Renovação tarifária',
+
+    # Privatização da Eletrobras em 2022
     ('CENTRAIS ELET BRAS S.A. - ELETROBRAS', 2022): 'Privatização Eletrobras - Renomeada para Axia Energia',
-    ('CENTRAIS ELET BRAS S.A. - ELETROBRAS', 2023): 'Privatização Eletrobras - Renomeada para Axia Energia', # <- adicionar
+    ('CENTRAIS ELET BRAS S.A. - ELETROBRAS', 2023): 'Privatização Eletrobras - Renomeada para Axia Energia',
+
+    # Privatização da Copel em 2023
     ('CIA PARANAENSE DE ENERGIA - COPEL',     2022): 'Privatização Copel',
     ('CIA PARANAENSE DE ENERGIA - COPEL',     2023): 'Privatização Copel',
+
+    # Operação Lava Jato e queda do preço do petróleo
+    ('PETROLEO BRASILEIRO S.A. PETROBRAS',    2014): 'Operação Lava Jato - Impairment e queda do petróleo',
+    ('PETROLEO BRASILEIRO S.A. PETROBRAS',    2015): 'Operação Lava Jato - Impairment e queda do petróleo',
 }
 
 # ============================================================
@@ -63,7 +82,10 @@ eventos_exogenos = {
 # ============================================================
 
 def get_tipo(empresa, ano):
-    """Retorna o tipo correto da empresa para o ano dado"""
+    """
+    Retorna o tipo correto da empresa para o ano dado.
+    Considera transições de estatal para privado.
+    """
     if empresa in transicoes:
         t = transicoes[empresa]
         return t['tipo_antes'] if ano <= t['ate_ano'] else t['tipo_depois']
@@ -76,7 +98,10 @@ def get_setor(empresa):
 
 
 def get_evento(empresa, ano):
-    """Retorna (flag, descricao) do evento exógeno se houver"""
+    """
+    Retorna (flag, descricao) do evento exógeno se houver.
+    Retorna (0, '') se não houver evento.
+    """
     chave = (empresa, ano)
     if chave in eventos_exogenos:
         return 1, eventos_exogenos[chave]
