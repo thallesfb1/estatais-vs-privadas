@@ -30,16 +30,20 @@ def processar_balanco(ano):
         'ST_CONTA_FIXA':  'conta_fixa',
     })
     nomes_padronizados = {
-    # Equatorial mudou de nome em 2020
-    'EQUATORIAL S.A.':       'EQUATORIAL ENERGIA S.A.',
-    # Eletrobras foi renomeada para Axia após privatização em 2022
-    'AXIA ENERGIA S.A.':          'CENTRAIS ELET BRAS S.A. - ELETROBRAS',
-    # Enauta tinha encoding quebrado nos arquivos CVM
-    'ENAUTA PARTICIPAÃÃES S.A.': 'ENAUTA PARTICIPAÇÕES S.A.',
-    # 3R Petroleum tinha encoding quebrado
-    '3R PETROLEUM ÃLEO E GÃS S.A.': '3R PETROLEUM ÓLEO E GÁS S.A.',
-    # PetroRecôncavo tinha encoding quebrado
-    'PETRORECÃNCAVO S.A.':        'PETRORECÔNCAVO S.A.',
+        # Equatorial mudou de nome em 2020
+        'EQUATORIAL S.A.':               'EQUATORIAL ENERGIA S.A.',
+        
+        # Eletrobras renomeada para Axia após privatização em 2022
+        'AXIA ENERGIA S.A.':             'CENTRAIS ELET BRAS S.A. - ELETROBRAS',
+        
+        # 3R Petroleum renomeada para Brava Energia em 2020
+        # Padronizamos para Brava pois é o nome mais recente
+        '3R PETROLEUM ÓLEO E GÁS S.A.':  'BRAVA ENERGIA S.A.',
+        
+        # Empresas com encoding quebrado nos arquivos CVM
+        'ENAUTA PARTICIPAÃÃES S.A.':    'ENAUTA PARTICIPAÇÕES S.A.',
+        '3R PETROLEUM ÃLEO E GÃS S.A.': 'BRAVA ENERGIA S.A.',  # <- encoding quebrado + rename
+        'PETRORECÃNCAVO S.A.':           'PETRORECÔNCAVO S.A.',
     }
     df['empresa'] = df['empresa'].replace(nomes_padronizados)
     

@@ -1,0 +1,61 @@
+ano;setor;empresa;kpi;valor;media_privados;desvio_padrao;zscore;sinal;evento_exogeno;descricao_evento
+2014;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;-0.0695;-0.7738;1.1873;0.5932;Acima da média;1;Operação Lava Jato - Impairment e queda do petróleo
+2014;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;-0.064;-0.8652;1.6903;0.474;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2014;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.2385;0.2854;0.3491;-0.1342;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2014;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.026;0.4301;;;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2014;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;35.0184;0.6178;;;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2014;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;-2.368;-6.6815;13.5818;0.3176;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2015;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;-0.1351;0.0778;0.0608;-3.501;Alerta;1;Operação Lava Jato - Impairment e queda do petróleo
+2015;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;-0.1083;0.3125;0.1751;-2.4035;Alerta;1;Operação Lava Jato - Impairment e queda do petróleo
+2015;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.3065;0.1634;0.4624;0.3094;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2015;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.0789;0.5929;;;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2015;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;15.5599;-1.6783;;;Na média;1;Operação Lava Jato - Impairment e queda do petróleo
+2015;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;-0.4008;-15.4092;22.1737;0.6769;Acima da média;1;Operação Lava Jato - Impairment e queda do petróleo
+2016;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;-0.0587;0.1724;0.166;-1.3922;Alerta;0;
+2016;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;-0.0525;0.4641;0.2025;-2.5509;Alerta;0;
+2016;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.3184;0.234;0.3686;0.2288;Na média;0;
+2016;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.2301;0.6113;0.3036;-1.2555;Alerta;0;
+2016;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;4.8701;0.9161;1.264;3.1281;Alerta;0;
+2016;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;0.5347;4.6871;5.4833;-0.7573;Abaixo da média;0;
+2017;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;-0.0017;0.0752;0.0561;-1.3723;Alerta;0;
+2017;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;-0.0016;0.3849;0.4631;-0.8345;Abaixo da média;0;
+2017;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.3229;0.3657;0.2552;-0.1675;Na média;0;
+2017;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.2829;0.5299;0.4006;-0.6165;Abaixo da média;0;
+2017;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;3.5761;0.5966;0.2183;13.6499;Alerta;0;
+2017;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;1.0812;8.4287;11.5983;-0.6335;Abaixo da média;0;
+2018;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;0.0909;0.1682;0.0499;-1.5484;Alerta;0;
+2018;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;0.0737;0.3873;0.2065;-1.5185;Alerta;0;
+2018;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.356;0.401;0.0337;-1.3327;Alerta;0;
+2018;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.3102;0.4972;0.2915;-0.6416;Abaixo da média;0;
+2018;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;2.5158;0.459;0.0697;29.5298;Alerta;0;
+2018;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;1.9811;5.2505;6.432;-0.5083;Abaixo da média;0;
+2019;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;0.1342;0.1095;0.2638;0.0936;Na média;0;
+2019;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;0.1328;-0.0935;0.7897;0.2866;Na média;0;
+2019;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.404;0.4174;0.0936;-0.1436;Na média;0;
+2019;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.4795;0.7112;0.1872;-1.2374;Alerta;0;
+2019;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;2.2181;0.8042;0.6963;2.0306;Alerta;0;
+2019;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;2.0564;0.8383;1.4709;0.8281;Acima da média;0;
+2020;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;0.0228;-0.0339;0.1663;0.3406;Na média;0;
+2020;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;0.0261;-0.251;0.6936;0.3995;Na média;0;
+2020;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.4556;0.3698;0.0746;1.1502;Acima da média;0;
+2020;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.4152;0.7872;0.1668;-2.2306;Alerta;0;
+2020;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;2.9361;1.22;0.5225;3.2845;Alerta;0;
+2020;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;0.9469;0.3869;0.8824;0.6347;Acima da média;0;
+2021;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;0.2738;0.1606;0.149;0.7598;Acima da média;0;
+2021;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;0.2356;0.3181;0.3448;-0.2392;Na média;0;
+2021;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.4852;0.4576;0.1259;0.2195;Na média;0;
+2021;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.6199;0.8863;0.4973;-0.5357;Abaixo da média;0;
+2021;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;0.9601;0.4539;0.6091;0.8311;Abaixo da média;0;
+2021;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;3.309;5.5571;8.6077;-0.2612;Na média;0;
+2022;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;0.5168;0.1942;0.1534;2.1024;Acima da média;0;
+2022;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;0.2937;0.2973;0.2044;-0.0176;Na média;0;
+2022;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.521;0.5404;0.0867;-0.2235;Na média;0;
+2022;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.576;0.5243;0.1774;0.2913;Na média;0;
+2022;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;0.647;0.4579;0.5864;0.3225;Na média;0;
+2022;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;10.261;5.9536;4.4153;0.9756;Acima da média;0;
+2023;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;roe;0.3259;0.1507;0.1616;1.0841;Acima da média;0;
+2023;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_liquida;0.2434;0.1898;0.1949;0.2752;Na média;0;
+2023;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_bruta;0.5272;0.3697;0.19;0.8293;Acima da média;0;
+2023;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;margem_ebitda;0.5183;0.5134;0.1857;0.0263;Na média;0;
+2023;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;alavancagem;0.9099;1.9916;1.6249;-0.6657;Acima da média;0;
+2023;Petroleo;PETROLEO BRASILEIRO S.A. PETROBRAS;cobertura_juros;8.3477;2.1807;2.1496;2.8689;Acima da média;0;

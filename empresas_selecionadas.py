@@ -25,13 +25,12 @@ empresas_selecionadas = {
     'ALUPAR INVESTIMENTO S/A':                        ('Energia', 'Privado'),
     'NEOENERGIA S.A.':                                ('Energia', 'Privado'),
 
-    # PETRÓLEO — 1 estatal, 5 privados
-    'PETROLEO BRASILEIRO S.A. PETROBRAS':             ('Petroleo', 'Estatal'),
-    'PRIO S.A.':                                      ('Petroleo', 'Privado'),
-    'ENAUTA PARTICIPAÇÕES S.A.':                      ('Petroleo', 'Privado'),
-    '3R PETROLEUM ÓLEO E GÁS S.A.':                  ('Petroleo', 'Privado'),
-    'BRAVA ENERGIA S.A.':                             ('Petroleo', 'Privado'),
-    'PETRORECÔNCAVO S.A.':                            ('Petroleo', 'Privado'),
+    # PETRÓLEO — 1 estatal, 4 privados
+    'PETROLEO BRASILEIRO S.A. PETROBRAS': ('Petroleo', 'Estatal'),
+    'PRIO S.A.':                          ('Petroleo', 'Privado'),
+    'ENAUTA PARTICIPAÇÕES S.A.':          ('Petroleo', 'Privado'),
+    'BRAVA ENERGIA S.A.':                 ('Petroleo', 'Privado'),  # <- era 3R
+    'PETRORECÔNCAVO S.A.':                ('Petroleo', 'Privado'),
 }
 
 # ============================================================
