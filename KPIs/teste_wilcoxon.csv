@@ -1,0 +1,19 @@
+setor;kpi;n_pares;mediana_diff;p_valor;significativo
+Financeiro;roe;10;-0.0019;0.9219;Não ❌
+Financeiro;margem_liquida;10;-0.0708;0.002;Sim ✅
+Financeiro;nim;10;-0.0096;0.002;Sim ✅
+Financeiro;indice_eficiencia;10;0.0726;0.002;Sim ✅
+Financeiro;alavancagem;10;5.4426;0.002;Sim ✅
+Financeiro;pdd_ratio;10;-0.0251;0.1602;Não ❌
+Energia;roe;10;-0.0233;0.084;Não ❌
+Energia;margem_liquida;10;0.0129;0.2754;Não ❌
+Energia;margem_bruta;10;-0.0007;0.625;Não ❌
+Energia;margem_ebitda;10;0.0054;0.6953;Não ❌
+Energia;alavancagem;10;-1.0344;0.084;Não ❌
+Energia;cobertura_juros;10;-0.1231;0.9219;Não ❌
+Petróleo;roe;10;0.0509;0.625;Não ❌
+Petróleo;margem_liquida;10;-0.031;0.4922;Não ❌
+Petróleo;margem_bruta;10;0.0213;0.3223;Não ❌
+Petróleo;margem_ebitda;10;-0.2394;0.0098;Sim ✅
+Petróleo;alavancagem;10;2.0069;0.0098;Sim ✅
+Petróleo;cobertura_juros;10;1.281;0.4316;Não ❌
