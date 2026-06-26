@@ -1,0 +1,8 @@
+setor;empresa;score_medio;pior_ano;melhor_ano;volatilidade
+Energia;Eletrobras;-0.1791;-1.8617;1.2029;1.071
+Energia;Cemig;-0.2723;-0.7583;0.423;0.3694
+Energia;Copel;-0.3507;-0.9599;0.0165;0.2748
+Financeiro;Banestes;0.1284;-0.1066;0.3873;0.2052
+Financeiro;Banco do Brasil;0.255;-0.0463;0.4119;0.1185
+Financeiro;BRB;0.4702;-0.0447;0.9587;0.353
+Petroleo;Petrobras;0.0524;-1.1043;0.7363;0.5749
